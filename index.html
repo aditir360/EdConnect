@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Education Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EdConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#chatbot">Chatbot</a></li>
+                <li><a href="#progress">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to our accessible educational platform, EdConnect. EdConnect aims to bridge the knowledge gap, foster a culture of lifelong learning, and unlock individual and collective potential.  Learn and track your progress with our AI-powered tools.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing accessible and high-quality education to all students. Our platform uses advanced AI technologies to enhance learning experiences.</p>
+          <div class="container">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Accessible and inclusive education for all</li>
+            <li>AI-powered learning paths and resources</li>
+            <li>Community forums, peer review, and mentorship</li>
+            <li>Personalized progress tracking and gamification</li>
+            <li>Comprehensive resource library and virtual events</li>
+        </ul>
+    </div>
+        </section>
+
+        <section id="quiz">
+            <h2>Take a Quiz</h2>
+          <p>Provide your notes here, and be able to test yourself through our automated quizzes.</p> 
+ 
+                <input type="text" id="input" placeholder="Enter your notes for generating a quiz..." size="100"><br></br>
+    <button id="generate-button">Generate Quiz</button>
+      <div id="conversationn"></div>
+      </section>
+  
+        
+        <section id="chatbot">
+            <h2>Chat with our AI</h2>
+            <p>Feel free to ask any questions and chat about any subject you want to learn with our AI bot. </p>
+          <hr></hr>
+            <div id="chat-container">
+    <input type="text" id="user-input" placeholder="Ask a question...">
+    <button id="submit-button">Send</button>
+    <div id="conversation"></div>
+</div>
+  
+  
+          
+  <div id="conversation">
+  </div>
+  <br>
+ 
+
+  <script src="https://wizard-orpheus.hackclub.dev/wizard_orpheus.js"></script>
+        </section>
+
+       <section id="goals">
+            <h2>Your Educational Goals</h2>
+            <p> Use this section to assign yourself educational goals, work on them, and track your daily progress. </p>
+            <form id="goals-form">
+                <input type="text" id="goal-input" placeholder="Enter your educational goal..." size="100"><br></br>
+                <button type="button" onclick="addGoal()">Add Goal</button>
+            </form>
+            <ul id="goals-list"></ul>
+        </section>
+    </main>
+    <br></br><br></br>
+    <footer>
+        <p>&copy; 2024 Accessible Education Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
